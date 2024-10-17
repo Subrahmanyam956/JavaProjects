@@ -1,6 +1,6 @@
 public class ElevatorButtonModule implements ButtonModule{
 
-    public void makeCartRequest(int curFloor, int targetFloor, boolean upDirection) {
+    public void makeCarRequest(int curFloor, int targetFloor, boolean upDirection) {
 
     }
 

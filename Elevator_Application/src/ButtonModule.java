@@ -1,5 +1,5 @@
 public interface ButtonModule {
 
-    void makeCartRequest(int curFloor, int targetFloor, boolean upDirection);
+    void makeCarRequest(int curFloor, int targetFloor, boolean upDirection);
 
 }

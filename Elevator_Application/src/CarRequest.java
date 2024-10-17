@@ -1,4 +1,4 @@
-public class CarRequest {
+public class CarRequest implements Comparable<CarRequest> {
     private int curFloor;
     private int targetFloor;
     private boolean upDirection;
@@ -8,6 +8,13 @@ public class CarRequest {
         this.targetFloor = targetFloor;
         this.upDirection = upDirection;
     }
+
+    @Override
+    public int compareTo(CarRequest other) {
+        // Compare based only on curFloor
+        return Integer.compare(this.curFloor, other.curFloor);
+    }
+
 
     public int getCurFloor() {
         return curFloor;
